@@ -1,6 +1,6 @@
 machine:
-  environment:
-    IMAGE_TAGS_JDK: "jdk-8"
+  java:
+    version: oraclejdk8
 
 dependencies:
   override:
