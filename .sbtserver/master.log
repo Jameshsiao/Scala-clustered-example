@@ -1,0 +1,897 @@
+New log file opened at Wed Nov 04 18:49:05 CST 2015 by 3779@HsiaoJamess-MacBook-Pro.local
+jvm 3779@HsiaoJamess-MacBook-Pro.local
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/jameshsiao/Work/migme/Examples/clustered-chat
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/jameshsiao/Work/migme/Examples/clustered-chat/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/jameshsiao/Work/migme/Examples/clustered-chat/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/jameshsiao/Work/migme/Examples/clustered-chat/project, returning: (clustered-chat-build)
+Loading project definition from /Users/jameshsiao/Work/migme/Examples/clustered-chat/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@58d49fc9, check cycles: false
+[info] Updating {file:/Users/jameshsiao/Work/migme/Examples/clustered-chat/project/}clustered-chat-build...
+Updating {file:/Users/jameshsiao/Work/migme/Examples/clustered-chat/project/}clustered-chat-build...
+Other repositories:
+Default repositories:
+Using inline dependencies specified in Scala.
+:: resolving dependencies :: default#clustered-chat-build;0.1-SNAPSHOT
+	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+	validate = true
+	refresh = false
+resolving dependencies for configuration 'compile'
+== resolving dependencies for default#clustered-chat-build;0.1-SNAPSHOT [compile]
+== resolving dependencies default#clustered-chat-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)]
+[info] Resolving com.typesafe.play#sbt-plugin;2.4.0 ...
+Resolving com.typesafe.play#sbt-plugin;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.4.0 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#sbt-plugin;2.4.0 ...
+Resolving com.typesafe.play#sbt-plugin;2.4.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.4.0 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-plugin;2.4.0
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml
+	sbt-plugin-releases: found md file for com.typesafe.play#sbt-plugin;2.4.0
+		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml (2.4.0)
+downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml ...
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml.sha1
+sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.4.0/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.4.0!ivy.xml(ivy.original) (3878ms)
+	found com.typesafe.play#sbt-plugin;2.4.0 in sbt-plugin-releases
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#routes-compiler_2.10;2.4.0 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#routes-compiler_2.10;2.4.0 ...
+Resolving com.typesafe.play#routes-compiler_2.10;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.4.0 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#routes-compiler_2.10;2.4.0 ...
+Resolving com.typesafe.play#routes-compiler_2.10;2.4.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.4.0 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.4.0
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.4.0
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/routes-compiler_2.10/2.4.0/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.4.0
+		tried https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.pom
+	public: found md file for com.typesafe.play#routes-compiler_2.10;2.4.0
+		=> https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.pom (2.4.0)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.pom
+	[SUCCESSFUL ] com.typesafe.play#routes-compiler_2.10;2.4.0!routes-compiler_2.10.pom(pom.original) (551ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/jars/routes-compiler_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/jars/routes-compiler_2.10.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/jars/routes-compiler_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.4.0/jars/routes-compiler_2.10.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/routes-compiler_2.10/2.4.0/jars/routes-compiler_2.10.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.4.0/routes-compiler_2.10-2.4.0.jar
+	found com.typesafe.play#routes-compiler_2.10;2.4.0 in public
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#routes-compiler_2.10;2.4.0 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#routes-compiler_2.10;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+[A[2K[info] Resolving org.scala-lang#scala-library;2.10.4 ...
+Resolving org.scala-lang#scala-library;2.10.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
+	found org.scala-lang#scala-library;2.10.4 in sbt-chain
+	[2.10.4] org.scala-lang#scala-library;2.10.4
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [compile->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.play#twirl-api_2.10;1.1.1 ...
+Resolving com.typesafe.play#twirl-api_2.10;1.1.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-api_2.10;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-api_2.10;1.1.1 ...
+Resolving com.typesafe.play#twirl-api_2.10;1.1.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#twirl-api_2.10;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-api_2.10/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-api_2.10/1.1.1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#twirl-api_2.10;1.1.1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-api_2.10/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-api_2.10/1.1.1/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#twirl-api_2.10;1.1.1
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/twirl-api_2.10/1.1.1/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#twirl-api_2.10;1.1.1
+		tried https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.pom
+	public: found md file for com.typesafe.play#twirl-api_2.10;1.1.1
+		=> https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.pom (1.1.1)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.pom
+	[SUCCESSFUL ] com.typesafe.play#twirl-api_2.10;1.1.1!twirl-api_2.10.pom(pom.original) (547ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-api_2.10/1.1.1/jars/twirl-api_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-api_2.10/1.1.1/jars/twirl-api_2.10.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-api_2.10/1.1.1/jars/twirl-api_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-api_2.10/1.1.1/jars/twirl-api_2.10.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/twirl-api_2.10/1.1.1/jars/twirl-api_2.10.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.jar
+	found com.typesafe.play#twirl-api_2.10;1.1.1 in public
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.commons#commons-lang3;3.4 ...
+Resolving org.apache.commons#commons-lang3;3.4 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-lang3;3.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.commons#commons-lang3;3.4 ...
+Resolving org.apache.commons#commons-lang3;3.4 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-lang3;3.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-lang3/3.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-lang3/3.4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.commons#commons-lang3;3.4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-lang3/3.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-lang3/3.4/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.commons#commons-lang3;3.4
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-lang3/3.4/ivys/ivy.xml
+	local: no ivy file found for org.apache.commons#commons-lang3;3.4
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+	public: found md file for org.apache.commons#commons-lang3;3.4
+		=> https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom (3.4)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.4!commons-lang3.pom(pom.original) (704ms)
+[A[2K[info] Resolving org.apache.commons#commons-parent;37 ...
+Resolving org.apache.commons#commons-parent;37 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;37 {}
+[A[2K[info] Resolving org.apache.commons#commons-parent;37 ...
+Resolving org.apache.commons#commons-parent;37 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;37 {}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.commons#commons-parent;37
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/37/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/37/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.commons#commons-parent;37
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-parent/37/ivys/ivy.xml
+	local: no ivy file found for org.apache.commons#commons-parent;37
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
+	public: found md file for org.apache.commons#commons-parent;37
+		=> https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom (37)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
+	[SUCCESSFUL ] org.apache.commons#commons-parent;37!commons-parent.pom(pom.original) (689ms)
+[A[2K[info] Resolving org.apache#apache;16 ...
+Resolving org.apache#apache;16 ...
+sbt-chain: Checking cache for: dependency: org.apache#apache;16 {}
+[A[2K[info] Resolving org.apache#apache;16 ...
+Resolving org.apache#apache;16 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache#apache;16 {}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache#apache;16
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache/apache/16/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache/apache/16/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache#apache;16
+		tried /Users/jameshsiao/.ivy2/local/org.apache/apache/16/ivys/ivy.xml
+	local: no ivy file found for org.apache#apache;16
+		tried https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom
+	public: found md file for org.apache#apache;16
+		=> https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom (16)
+downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom
+	public: downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom
+	[SUCCESSFUL ] org.apache#apache;16!apache.pom(pom.original) (567ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/jars/apache.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/jars/apache.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache/apache/16/jars/apache.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache/apache/16/jars/apache.jar
+		tried /Users/jameshsiao/.ivy2/local/org.apache/apache/16/jars/apache.jar
+		tried https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.jar
+CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.jar
+		tried http://repo.typesafe.com/typesafe/releases/org/apache/apache/16/apache-16.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/apache/16/apache-16.jar
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/jars/apache.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/jars/apache.jar
+		tried file:/Users/jameshsiao/.m2/repository/org/apache/apache/16/apache-16.jar
+		tried https://tools.projectgoth.com/nexus/content/groups/public/org/apache/apache/16/apache-16.jar
+CLIENT ERROR: Not Found url=https://tools.projectgoth.com/nexus/content/groups/public/org/apache/apache/16/apache-16.jar
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.jar
+CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.jar
+		tried http://repo.typesafe.com/typesafe/releases/org/apache/commons/commons-parent/37/commons-parent-37.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/commons/commons-parent/37/commons-parent-37.jar
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
+		tried file:/Users/jameshsiao/.m2/repository/org/apache/commons/commons-parent/37/commons-parent-37.jar
+		tried https://tools.projectgoth.com/nexus/content/groups/public/org/apache/commons/commons-parent/37/commons-parent-37.jar
+CLIENT ERROR: Not Found url=https://tools.projectgoth.com/nexus/content/groups/public/org/apache/commons/commons-parent/37/commons-parent-37.jar
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+	found org.apache.commons#commons-lang3;3.4 in public
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->commons-io#commons-io;2.4 [compile->master(compile)]
+[A[2K[info] Resolving commons-io#commons-io;2.4 ...
+Resolving commons-io#commons-io;2.4 ...
+sbt-chain: Checking cache for: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving commons-io#commons-io;2.4 ...
+Resolving commons-io#commons-io;2.4 ...
+sbt-chain-delegate: Checking cache for: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for commons-io#commons-io;2.4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.4/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for commons-io#commons-io;2.4
+		tried /Users/jameshsiao/.ivy2/local/commons-io/commons-io/2.4/ivys/ivy.xml
+	local: no ivy file found for commons-io#commons-io;2.4
+		tried https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+	public: found md file for commons-io#commons-io;2.4
+		=> https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom (2.4)
+downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom ...
+	public: downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+	public: downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom
+	[SUCCESSFUL ] commons-io#commons-io;2.4!commons-io.pom(pom.original) (814ms)
+[A[2K[info] Resolving org.apache.commons#commons-parent;25 ...
+Resolving org.apache.commons#commons-parent;25 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;25 {}
+[A[2K[info] Resolving org.apache.commons#commons-parent;25 ...
+Resolving org.apache.commons#commons-parent;25 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;25 {}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/25/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/25/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.commons#commons-parent;25
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/25/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/25/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.commons#commons-parent;25
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-parent/25/ivys/ivy.xml
+	local: no ivy file found for org.apache.commons#commons-parent;25
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom
+	public: found md file for org.apache.commons#commons-parent;25
+		=> https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom (25)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.pom
+	[SUCCESSFUL ] org.apache.commons#commons-parent;25!commons-parent.pom(pom.original) (993ms)
+[A[2K[info] Resolving org.apache#apache;9 ...
+Resolving org.apache#apache;9 ...
+sbt-chain: Checking cache for: dependency: org.apache#apache;9 {}
+sbt-chain: module revision found in cache: org.apache#apache;9
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.jar
+CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/25/commons-parent-25.jar
+		tried http://repo.typesafe.com/typesafe/releases/org/apache/commons/commons-parent/25/commons-parent-25.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/commons/commons-parent/25/commons-parent-25.jar
+		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/25/jars/commons-parent.jar
+		tried file:/Users/jameshsiao/.m2/repository/org/apache/commons/commons-parent/25/commons-parent-25.jar
+		tried https://tools.projectgoth.com/nexus/content/groups/public/org/apache/commons/commons-parent/25/commons-parent-25.jar
+CLIENT ERROR: Not Found url=https://tools.projectgoth.com/nexus/content/groups/public/org/apache/commons/commons-parent/25/commons-parent-25.jar
+		tried https://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.4/jars/commons-io.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/commons-io/commons-io/2.4/jars/commons-io.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.4/jars/commons-io.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-io/commons-io/2.4/jars/commons-io.jar
+		tried /Users/jameshsiao/.ivy2/local/commons-io/commons-io/2.4/jars/commons-io.jar
+		tried https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+	found commons-io#commons-io;2.4 in public
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->commons-io#commons-io;2.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->commons-io#commons-io;2.4 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->commons-io#commons-io;2.4 [compile->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->commons-io#commons-io;2.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.4.0->commons-io#commons-io;2.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#routes-compiler_2.10;2.4.0 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#sbt-run-support_2.10;2.4.0 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#sbt-run-support_2.10;2.4.0 ...
+Resolving com.typesafe.play#sbt-run-support_2.10;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.4.0 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#sbt-run-support_2.10;2.4.0 ...
+Resolving com.typesafe.play#sbt-run-support_2.10;2.4.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.4.0 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.0
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.0
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.4.0/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.4.0
+		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.pom
+	public: found md file for com.typesafe.play#sbt-run-support_2.10;2.4.0
+		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.pom (2.4.0)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.pom
+	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.4.0!sbt-run-support_2.10.pom(pom.original) (793ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/jars/sbt-run-support_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/jars/sbt-run-support_2.10.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/jars/sbt-run-support_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.4.0/jars/sbt-run-support_2.10.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.4.0/jars/sbt-run-support_2.10.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.4.0/sbt-run-support_2.10-2.4.0.jar
+	found com.typesafe.play#sbt-run-support_2.10;2.4.0 in public
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#sbt-run-support_2.10;2.4.0 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#sbt-run-support_2.10;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->com.typesafe.play#build-link;2.4.0 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.play#build-link;2.4.0 ...
+Resolving com.typesafe.play#build-link;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#build-link;2.4.0 ...
+Resolving com.typesafe.play#build-link;2.4.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#build-link;2.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.0/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#build-link;2.4.0
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.0/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#build-link;2.4.0
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/build-link/2.4.0/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#build-link;2.4.0
+		tried https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.pom
+	public: found md file for com.typesafe.play#build-link;2.4.0
+		=> https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.pom (2.4.0)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.pom
+	[SUCCESSFUL ] com.typesafe.play#build-link;2.4.0!build-link.pom(pom.original) (801ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.0/jars/build-link.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.4.0/jars/build-link.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.0/jars/build-link.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.4.0/jars/build-link.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/build-link/2.4.0/jars/build-link.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.0/build-link-2.4.0.jar
+	found com.typesafe.play#build-link;2.4.0 in public
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->com.typesafe.play#build-link;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->com.typesafe.play#play-exceptions;2.4.0 [compile->master(compile)]
+[A[2K[info] Resolving com.typesafe.play#play-exceptions;2.4.0 ...
+Resolving com.typesafe.play#play-exceptions;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#play-exceptions;2.4.0 ...
+Resolving com.typesafe.play#play-exceptions;2.4.0 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.0/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#play-exceptions;2.4.0
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.0/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.0/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#play-exceptions;2.4.0
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/play-exceptions/2.4.0/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#play-exceptions;2.4.0
+		tried https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.pom
+	public: found md file for com.typesafe.play#play-exceptions;2.4.0
+		=> https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.pom (2.4.0)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.pom
+	[SUCCESSFUL ] com.typesafe.play#play-exceptions;2.4.0!play-exceptions.pom(pom.original) (795ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.0/jars/play-exceptions.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.4.0/jars/play-exceptions.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.0/jars/play-exceptions.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.4.0/jars/play-exceptions.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/play-exceptions/2.4.0/jars/play-exceptions.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.0/play-exceptions-2.4.0.jar
+	found com.typesafe.play#play-exceptions;2.4.0 in public
+== resolving dependencies com.typesafe.play#build-link;2.4.0->com.typesafe.play#play-exceptions;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [compile->master(compile)]
+[A[2K[info] Resolving org.javassist#javassist;3.19.0-GA ...
+Resolving org.javassist#javassist;3.19.0-GA ...
+sbt-chain: Checking cache for: dependency: org.javassist#javassist;3.19.0-GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.javassist#javassist;3.19.0-GA ...
+Resolving org.javassist#javassist;3.19.0-GA ...
+sbt-chain-delegate: Checking cache for: dependency: org.javassist#javassist;3.19.0-GA {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.javassist/javassist/3.19.0-GA/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.javassist/javassist/3.19.0-GA/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.javassist#javassist;3.19.0-GA
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.javassist/javassist/3.19.0-GA/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.javassist/javassist/3.19.0-GA/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.javassist#javassist;3.19.0-GA
+		tried /Users/jameshsiao/.ivy2/local/org.javassist/javassist/3.19.0-GA/ivys/ivy.xml
+	local: no ivy file found for org.javassist#javassist;3.19.0-GA
+		tried https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom
+	public: found md file for org.javassist#javassist;3.19.0-GA
+		=> https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom (3.19.0-GA)
+downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom
+	public: downloading https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom
+	[SUCCESSFUL ] org.javassist#javassist;3.19.0-GA!javassist.pom(pom.original) (807ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar
+		tried /Users/jameshsiao/.ivy2/local/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar
+		tried https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.jar
+	found org.javassist#javassist;3.19.0-GA in public
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [compile->compile(*)]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [compile->default(compile)]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [compile->runtime]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [compile->compile]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [compile->master]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->com.typesafe.play#build-link;2.4.0 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->com.typesafe.play#build-link;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->com.typesafe.play#play-exceptions;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->com.typesafe.play#play-exceptions;2.4.0 [runtime->compile]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#build-link;2.4.0->org.javassist#javassist;3.19.0-GA [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->com.typesafe.play#build-link;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.4.0->com.typesafe.play#build-link;2.4.0 [runtime->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.play#sbt-run-support_2.10;2.4.0 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe#config;1.3.0 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe#config;1.3.0 ...
+Resolving com.typesafe#config;1.3.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe#config;1.3.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe#config;1.3.0
+	found com.typesafe#config;1.3.0 in sbt-chain
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe#config;1.3.0 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe#config;1.3.0 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe#config;1.3.0 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.google.guava#guava;18.0 [compile->default(compile)]
+[A[2K[info] Resolving com.google.guava#guava;18.0 ...
+Resolving com.google.guava#guava;18.0 ...
+sbt-chain: Checking cache for: dependency: com.google.guava#guava;18.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.google.guava#guava;18.0
+	found com.google.guava#guava;18.0 in sbt-chain
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.google.guava#guava;18.0 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.google.guava#guava;18.0 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.google.guava#guava;18.0 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.h2database#h2;1.4.187 [compile->default(compile)]
+[A[2K[info] Resolving com.h2database#h2;1.4.187 ...
+Resolving com.h2database#h2;1.4.187 ...
+sbt-chain: Checking cache for: dependency: com.h2database#h2;1.4.187 {compile=[default(compile)]}
+[A[2K[info] Resolving com.h2database#h2;1.4.187 ...
+Resolving com.h2database#h2;1.4.187 ...
+sbt-chain-delegate: Checking cache for: dependency: com.h2database#h2;1.4.187 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.h2database/h2/1.4.187/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.h2database/h2/1.4.187/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.h2database#h2;1.4.187
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.h2database/h2/1.4.187/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.h2database/h2/1.4.187/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.h2database#h2;1.4.187
+		tried /Users/jameshsiao/.ivy2/local/com.h2database/h2/1.4.187/ivys/ivy.xml
+	local: no ivy file found for com.h2database#h2;1.4.187
+		tried https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.pom
+	public: found md file for com.h2database#h2;1.4.187
+		=> https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.pom (1.4.187)
+downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.pom
+	public: downloading https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.pom
+	[SUCCESSFUL ] com.h2database#h2;1.4.187!h2.pom(pom.original) (790ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.h2database/h2/1.4.187/jars/h2.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.h2database/h2/1.4.187/jars/h2.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.h2database/h2/1.4.187/jars/h2.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.h2database/h2/1.4.187/jars/h2.jar
+		tried /Users/jameshsiao/.ivy2/local/com.h2database/h2/1.4.187/jars/h2.jar
+		tried https://repo1.maven.org/maven2/com/h2database/h2/1.4.187/h2-1.4.187.jar
+	found com.h2database#h2;1.4.187 in public
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.h2database#h2;1.4.187 [compile->runtime]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.h2database#h2;1.4.187 [compile->compile]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.h2database#h2;1.4.187 [compile->master]
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)]
+[A[2K[info] Resolving net.contentobjects.jnotify#jnotify;0.94-play-1 ...
+Resolving net.contentobjects.jnotify#jnotify;0.94-play-1 ...
+sbt-chain: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94-play-1 {compile=[default(compile)]}
+[A[2K[info] Resolving net.contentobjects.jnotify#jnotify;0.94-play-1 ...
+Resolving net.contentobjects.jnotify#jnotify;0.94-play-1 ...
+sbt-chain-delegate: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94-play-1 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for net.contentobjects.jnotify#jnotify;0.94-play-1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml
+	sbt-plugin-releases: found md file for net.contentobjects.jnotify#jnotify;0.94-play-1
+		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml (0.94-play-1)
+downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml ...
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml.sha1
+sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/net.contentobjects.jnotify/jnotify/0.94-play-1/ivys/ivy.xml
+	[SUCCESSFUL ] net.contentobjects.jnotify#jnotify;0.94-play-1!ivy.xml(ivy.original) (3407ms)
+	found net.contentobjects.jnotify#jnotify;0.94-play-1 in sbt-plugin-releases
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.sbt#sbt-twirl;1.1.1 ...
+Resolving com.typesafe.sbt#sbt-twirl;1.1.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-twirl;1.1.1 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbt#sbt-twirl;1.1.1 ...
+Resolving com.typesafe.sbt#sbt-twirl;1.1.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-twirl;1.1.1 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-twirl;1.1.1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml
+	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-twirl;1.1.1
+		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml (1.1.1)
+downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml ...
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml.sha1
+sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.10/sbt_0.13/1.1.1/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbt#sbt-twirl;1.1.1!ivy.xml(ivy.original) (5408ms)
+	found com.typesafe.sbt#sbt-twirl;1.1.1 in sbt-plugin-releases
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.play#twirl-compiler_2.10;1.1.1 ...
+Resolving com.typesafe.play#twirl-compiler_2.10;1.1.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-compiler_2.10;1.1.1 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-compiler_2.10;1.1.1 ...
+Resolving com.typesafe.play#twirl-compiler_2.10;1.1.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#twirl-compiler_2.10;1.1.1 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.1.1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.1.1
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/twirl-compiler_2.10/1.1.1/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#twirl-compiler_2.10;1.1.1
+		tried https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.pom
+	public: found md file for com.typesafe.play#twirl-compiler_2.10;1.1.1
+		=> https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.pom (1.1.1)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.pom
+	[SUCCESSFUL ] com.typesafe.play#twirl-compiler_2.10;1.1.1!twirl-compiler_2.10.pom(pom.original) (551ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/jars/twirl-compiler_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/jars/twirl-compiler_2.10.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/jars/twirl-compiler_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-compiler_2.10/1.1.1/jars/twirl-compiler_2.10.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/twirl-compiler_2.10/1.1.1/jars/twirl-compiler_2.10.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.10/1.1.1/twirl-compiler_2.10-1.1.1.jar
+	found com.typesafe.play#twirl-compiler_2.10;1.1.1 in public
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->runtime]
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-compiler;2.10.4 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.scala-lang#scala-compiler;2.10.4 ...
+Resolving org.scala-lang#scala-compiler;2.10.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4
+	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-compiler;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.scala-lang#scala-reflect;2.10.4 ...
+Resolving org.scala-lang#scala-reflect;2.10.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.4
+	found org.scala-lang#scala-reflect;2.10.4 in sbt-chain
+	[2.10.4] org.scala-lang#scala-reflect;2.10.4
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-compiler;2.10.4 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-compiler;2.10.4 [compile->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-parser_2.10;1.1.1 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-parser_2.10;1.1.1 ...
+Resolving com.typesafe.play#twirl-parser_2.10;1.1.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-parser_2.10;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving com.typesafe.play#twirl-parser_2.10;1.1.1 ...
+Resolving com.typesafe.play#twirl-parser_2.10;1.1.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#twirl-parser_2.10;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.1.1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.1.1
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/twirl-parser_2.10/1.1.1/ivys/ivy.xml
+	local: no ivy file found for com.typesafe.play#twirl-parser_2.10;1.1.1
+		tried https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.pom
+	public: found md file for com.typesafe.play#twirl-parser_2.10;1.1.1
+		=> https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.pom (1.1.1)
+downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.pom ...
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.pom
+	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.pom
+	[SUCCESSFUL ] com.typesafe.play#twirl-parser_2.10;1.1.1!twirl-parser_2.10.pom(pom.original) (555ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/jars/twirl-parser_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/jars/twirl-parser_2.10.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/jars/twirl-parser_2.10.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/twirl-parser_2.10/1.1.1/jars/twirl-parser_2.10.jar
+		tried /Users/jameshsiao/.ivy2/local/com.typesafe.play/twirl-parser_2.10/1.1.1/jars/twirl-parser_2.10.jar
+		tried https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.10/1.1.1/twirl-parser_2.10-1.1.1.jar
+	found com.typesafe.play#twirl-parser_2.10;1.1.1 in public
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-parser_2.10;1.1.1 [compile->compile(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-parser_2.10;1.1.1 [compile->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-parser_2.10;1.1.1 [compile->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-parser_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-compiler;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-compiler;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->org.scala-lang#scala-library;2.10.4 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-parser_2.10;1.1.1 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.play#twirl-compiler_2.10;1.1.1->com.typesafe.play#twirl-parser_2.10;1.1.1 [runtime->compile]
+== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->master]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+== resolving dependencies com.typesafe.play#sbt-plugin;2.4.0->com.typesafe.sbt#sbt-native-packager;1.0.1 [compile->default(compile)]
+[A[2K[info] Resolving com.typesafe.sbt#sbt-native-packager;1.0.1 ...
+Resolving com.typesafe.sbt#sbt-native-packager;1.0.1 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;1.0.1 {compile=[default(compile)]}
+[A[2K[info] Resolving com.typesafe.sbt#sbt-native-packager;1.0.1 ...
+Resolving com.typesafe.sbt#sbt-native-packager;1.0.1 ...
+sbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;1.0.1 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-native-packager;1.0.1
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml
+	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-native-packager;1.0.1
+		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml (1.0.1)
+downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml ...
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml
+	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml.sha1
+sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.0.1/ivys/ivy.xml
+	[SUCCESSFUL ] com.typesafe.sbt#sbt-native-packager;1.0.1!ivy.xml(ivy.original) (4083ms)
+	found com.typesafe.sbt#sbt-native-packager;1.0.1 in sbt-plugin-releases
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}
+dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@ecfd633 => sbt.ivyint.MergedDescriptors@537f4c56
+[A[2K[info] Resolving org.apache.commons#commons-compress;1.4.1 ...
+Resolving org.apache.commons#commons-compress;1.4.1 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-compress;1.4.1 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1
+	found org.apache.commons#commons-compress;1.4.1 in sbt-chain
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.apache.commons#commons-compress;1.4.1 [compile->runtime]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.apache.commons#commons-compress;1.4.1 [compile->compile]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(*)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}
+dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@ecfd633 => sbt.ivyint.MergedDescriptors@4add1394
+[A[2K[info] Resolving org.tukaani#xz;1.0 ...
+Resolving org.tukaani#xz;1.0 ...
+sbt-chain: Checking cache for: dependency: org.tukaani#xz;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.tukaani#xz;1.0
+	found org.tukaani#xz;1.0 in sbt-chain
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->runtime(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.apache.commons#commons-compress;1.4.1 [compile->master]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.vafer#jdeb;1.3 [compile->default(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}
+dependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@ecfd633 => sbt.ivyint.MergedDescriptors@146434ef
+[A[2K[info] Resolving org.vafer#jdeb;1.3 ...
+Resolving org.vafer#jdeb;1.3 ...
+sbt-chain: Checking cache for: dependency: org.vafer#jdeb;1.3 {compile=[default(compile)]}
+[A[2K[info] Resolving org.vafer#jdeb;1.3 ...
+Resolving org.vafer#jdeb;1.3 ...
+sbt-chain-delegate: Checking cache for: dependency: org.vafer#jdeb;1.3 {compile=[default(compile)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.vafer#jdeb;1.3
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.vafer/jdeb/1.3/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.vafer#jdeb;1.3
+		tried /Users/jameshsiao/.ivy2/local/org.vafer/jdeb/1.3/ivys/ivy.xml
+	local: no ivy file found for org.vafer#jdeb;1.3
+		tried https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.pom
+	public: found md file for org.vafer#jdeb;1.3
+		=> https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.pom (1.3)
+downloading https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.pom
+	public: downloading https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.pom
+	[SUCCESSFUL ] org.vafer#jdeb;1.3!jdeb.pom(pom.original) (1175ms)
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.vafer/jdeb/1.3/maven-plugins/jdeb.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.vafer/jdeb/1.3/maven-plugins/jdeb.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.vafer/jdeb/1.3/maven-plugins/jdeb.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.vafer/jdeb/1.3/maven-plugins/jdeb.jar
+		tried /Users/jameshsiao/.ivy2/local/org.vafer/jdeb/1.3/maven-plugins/jdeb.jar
+		tried https://repo1.maven.org/maven2/org/vafer/jdeb/1.3/jdeb-1.3.jar
+	found org.vafer#jdeb;1.3 in public
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.vafer#jdeb;1.3 [compile->runtime]
+== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.1->org.vafer#jdeb;1.3 [compile->compile]
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+== resolving dependencies org.vafer#jdeb;1.3->commons-io#commons-io;2.4 [compile->compile(*)]
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.apache.commons#commons-compress;1.7 ...
+Resolving org.apache.commons#commons-compress;1.7 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-compress;1.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.apache.commons#commons-compress;1.7 ...
+Resolving org.apache.commons#commons-compress;1.7 ...
+sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-compress;1.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	sbt-plugin-releases: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-compress/1.7/ivys/ivy.xml
+	local: no ivy file found for org.apache.commons#commons-compress;1.7
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom
+	public: found md file for org.apache.commons#commons-compress;1.7
+		=> https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom (1.7)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom
+	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom
+	[SUCCESSFUL ] org.apache.commons#commons-compress;1.7!commons-compress.pom(pom.original) (1048ms)
+[A[2K[info] Resolving org.apache.commons#commons-parent;32 ...
+Resolving org.apache.commons#commons-parent;32 ...
+sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;32 {}
+sbt-chain: module revision found in cache: org.apache.commons#commons-parent;32
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-compress/1.7/jars/commons-compress.jar
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-compress/1.7/jars/commons-compress.jar
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-compress/1.7/jars/commons-compress.jar
+CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.commons/commons-compress/1.7/jars/commons-compress.jar
+		tried /Users/jameshsiao/.ivy2/local/org.apache.commons/commons-compress/1.7/jars/commons-compress.jar
+		tried https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.jar
+	found org.apache.commons#commons-compress;1.7 in public
+== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile(*)]
+== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->master(compile)]
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}
+dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.4 {provided=[default(compile)]}
+[A[2K[info] Resolving org.tukaani#xz;1.4 ...
+Resolving org.tukaani#xz;1.4 ...
+sbt-chain: Checking cache for: dependency: org.tukaani#xz;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[A[2K[info] Resolving org.tukaani#xz;1.4 ...
+Resolving org.tukaani#xz;1.4 ...
+sbt-chain-delegate: Checking cache for: dependency: org.tukaani#xz;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+		tried https://repo.typesafe.com/typesafe/ivy-releases/org.tukaani/xz/1.4/ivys/ivy.xml
+CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.tukaani/xz/1.4/ivys/ivy.xml
+	typesafe-ivy-releases: no ivy file found for org.tukaani#xz;1.4
+		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.tukaani/xz/1.4/ivys/ivy.xml
