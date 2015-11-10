@@ -5,3 +5,7 @@ machine:
 dependencies:
   override:
     - activator compile
+
+test:
+  override:
+    - sbt test
